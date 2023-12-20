@@ -1,0 +1,64 @@
+{
+    "data": [
+        {
+            "question": "Tell me about yourself?",
+            "tags": ["All", "Job Role"],
+            "answer": [
+                "I am a results-oriented professional with a strong background in [Your Field].",
+                "In my previous role at [Previous Company], I successfully [mention an achievement or responsibility].",
+                "I am skilled in [Key Skill 1, Key Skill 2], and I am passionate about [Your Passion or Interest].",
+                "I believe my combination of skills and experience makes me a valuable asset to any team."
+            ]
+        },
+        {
+            "question": "What are your strengths and weaknesses?",
+            "tags": ["All", "Job Role"],
+            "answer": [
+                "Strength 1",
+                "Strength 2",
+                "One of my weaknesses is [mention a weakness], but I am actively working on improving it by [mention how you are addressing it]."
+            ]
+        },
+        {
+            "question": "Can you describe a challenging situation at work and how you handled it?",
+            "tags": ["All", "Job Role"],
+            "answer": [
+                "In a previous role at [Previous Company], I faced a challenge where [describe the situation].",
+                "To address this, I [explain the actions you took], which resulted in [positive outcome].",
+                "This experience taught me the importance of [lessons learned]."
+            ]
+        },
+        {
+            "question": "How do you stay updated with industry trends and technologies?",
+            "tags": ["All", "Job Role"],
+            "answer": [
+                "I stay updated by regularly participating in online courses on platforms like [mention platforms], attending industry conferences such as [mention conferences], and actively networking with professionals in the field."
+            ]
+        },
+        {
+            "question": "What is your approach to problem-solving?",
+            "tags": ["All", "Job Role"],
+            "answer": [
+                "My approach involves systematically defining the problem, gathering relevant information, generating multiple potential solutions, evaluating each solution, and implementing the most effective one.",
+                "I believe in a collaborative problem-solving approach that leverages the strengths of the team."
+            ]
+        },
+        {
+            "question": "Can you tell the difference between User Experience and User Interface?",
+            "tags": ["UI/UX"],
+            "answer": [
+                "User Experience (UX) is about the overall experience a user has with a product, encompassing usability, accessibility, and satisfaction throughout the entire user journey.",
+                "User Interface (UI) is the visual and interactive part of the product, focusing on the design elements, layout, and responsiveness.",
+                "In summary, UX is about the overall feel of the product, while UI is about the specific look and interactivity."
+            ]
+        },
+        {
+            "question": "Explain what a REST API is and how you can build it.",
+            "tags": ["Developers", "Backend"],
+            "answer": [
+                "A REST API (Representational State Transfer) is an architectural style for designing networked applications that use standard HTTP methods (GET, POST, PUT, DELETE) for communication.",
+                "To build a REST API, one needs to define clear endpoints, use appropriate HTTP methods, handle requests and responses effectively, and ensure scalability and security through best practices in coding and architecture."
+            ]
+        }
+    ]
+}
