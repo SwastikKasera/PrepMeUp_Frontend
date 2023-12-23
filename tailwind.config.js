@@ -11,7 +11,10 @@ module.exports = {
         'normalGray': '#3b3b3b',
         'background': '#181818',
         'darkBackground': '#1e1e1e'
-      }
+      },
+      fontFamily: {
+        'changa': ['Changa', 'sans-serif'],
+      },
     },
   },
   plugins: [],
