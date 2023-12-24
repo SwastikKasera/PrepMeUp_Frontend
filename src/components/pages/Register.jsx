@@ -18,7 +18,7 @@ const Register = () => {
         "password":""
     })
     const registerUser = async ()=>{
-        return await axios.post('http://localhost:4000/register', registerDetails,{
+        return await axios.post('https://prep-me-up.onrender.com/register', registerDetails,{
             headers:{
                 "Content-Type": "application/json"
             }
