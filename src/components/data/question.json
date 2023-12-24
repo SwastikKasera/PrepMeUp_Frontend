@@ -2,7 +2,7 @@
     "data": [
         {
             "question": "Tell me about yourself?",
-            "tags": ["All", "Job Role"],
+            "tags": ["All", "Common"],
             "answer": [
                 "I am a results-oriented professional with a strong background in [Your Field].",
                 "In my previous role at [Previous Company], I successfully [mention an achievement or responsibility].",
@@ -12,7 +12,7 @@
         },
         {
             "question": "What are your strengths and weaknesses?",
-            "tags": ["All", "Job Role"],
+            "tags": ["All", "Common"],
             "answer": [
                 "Strength 1",
                 "Strength 2",
@@ -21,7 +21,7 @@
         },
         {
             "question": "Can you describe a challenging situation at work and how you handled it?",
-            "tags": ["All", "Job Role"],
+            "tags": ["All","Common"],
             "answer": [
                 "In a previous role at [Previous Company], I faced a challenge where [describe the situation].",
                 "To address this, I [explain the actions you took], which resulted in [positive outcome].",
@@ -30,14 +30,14 @@
         },
         {
             "question": "How do you stay updated with industry trends and technologies?",
-            "tags": ["All", "Job Role"],
+            "tags": ["All", "Common"],
             "answer": [
                 "I stay updated by regularly participating in online courses on platforms like [mention platforms], attending industry conferences such as [mention conferences], and actively networking with professionals in the field."
             ]
         },
         {
             "question": "What is your approach to problem-solving?",
-            "tags": ["All", "Job Role"],
+            "tags": ["All", "Common"],
             "answer": [
                 "My approach involves systematically defining the problem, gathering relevant information, generating multiple potential solutions, evaluating each solution, and implementing the most effective one.",
                 "I believe in a collaborative problem-solving approach that leverages the strengths of the team."
@@ -58,6 +58,96 @@
             "answer": [
                 "A REST API (Representational State Transfer) is an architectural style for designing networked applications that use standard HTTP methods (GET, POST, PUT, DELETE) for communication.",
                 "To build a REST API, one needs to define clear endpoints, use appropriate HTTP methods, handle requests and responses effectively, and ensure scalability and security through best practices in coding and architecture."
+            ]
+        },
+        {
+            "question": "What is the significance of using middleware in a web application, and how would you implement it in a backend system?",
+            "tags": ["Developers", "Backend"],
+            "answer": [
+                "Middleware in a web application acts as a bridge between the frontend and backend, facilitating communication and data exchange.",
+                "It's crucial for handling tasks like authentication, logging, and request processing.",
+                "To implement middleware, you define functions or components that intercept and process requests before they reach the backend logic."
+            ]
+        },
+        {
+            "question": "Can you provide an example of a successful user interface redesign you've been involved in, and what impact it had on user experience metrics?",
+            "tags": ["UI/UX"],
+            "answer": [
+                "In a recent project, we revamped the UI by simplifying navigation and improving visual aesthetics.",
+                "User engagement increased by 30%, and the bounce rate decreased by 15%, indicating a positive impact on user experience.",
+                "The redesign also led to a 20% increase in user satisfaction based on post-implementation surveys."
+            ]
+        },
+        {
+            "question": "How do you prioritize tasks and manage your time effectively, especially when working on multiple projects with tight deadlines?",
+            "tags": ["All", "Common"],
+            "answer": [
+                "I prioritize tasks by assessing deadlines, importance, and dependencies.",
+                "Using tools like project management software, I create a detailed schedule and set realistic milestones.",
+                "Regularly reviewing and adjusting the plan helps me adapt to changing priorities and ensures timely project completion."
+            ]
+        },
+        {
+            "question": "Explain the concept of version control, and why is it essential for collaborative software development?",
+            "tags": ["Developers", "General"],
+            "answer": [
+                "Version control is a system that tracks changes to source code over time, enabling collaboration and managing code history.",
+                "It allows multiple developers to work on a project simultaneously, prevents conflicts, and provides a backup of code at different stages.",
+                "Essential for collaborative development, version control enhances accountability, transparency, and the ability to roll back to previous states if needed."
+            ]
+        },
+        {
+            "question": "How do you handle feedback, and can you share an instance where you turned constructive criticism into positive results?",
+            "tags": ["All", "Common"],
+            "answer": [
+                "I approach feedback with an open mind, focusing on learning and improvement.",
+                "During a project, feedback suggested a need for clearer documentation. I addressed this by revising the documentation, resulting in improved understanding among team members.",
+                "This experience reinforced the importance of constructive criticism in refining processes and delivering higher-quality outcomes."
+            ]
+        },
+        {
+            "question": "What role does user research play in the design process, and can you provide an example of how user feedback influenced a design decision you made?",
+            "tags": ["UI/UX"],
+            "answer": [
+                "User research is integral to understanding user needs and preferences, guiding design decisions.",
+                "In a mobile app project, user feedback indicated a desire for simplified navigation. We conducted additional research, leading to a redesign that improved user satisfaction by 25%.",
+                "This highlights how user research shapes design choices and ultimately enhances the user experience."
+            ]
+        },
+        {
+            "question": "How do you ensure effective communication and collaboration within a cross-functional team, especially when team members are located in different geographic locations?",
+            "tags": ["All", "Common"],
+            "answer": [
+                "I prioritize clear and consistent communication through tools like video conferences, messaging apps, and collaborative platforms.",
+                "Establishing regular team meetings, setting expectations, and fostering an open communication culture help bridge geographical gaps.",
+                "Additionally, I encourage feedback and ensure that all team members feel heard, fostering a collaborative and inclusive work environment."
+            ]
+        },
+        {
+            "question": "Explain the concept of database indexing and its importance in optimizing query performance.",
+            "tags": ["Developers", "Backend"],
+            "answer": [
+                "Database indexing involves creating a data structure to enhance the speed of data retrieval operations in a database.",
+                "By indexing specific columns, queries can quickly locate and retrieve relevant data, significantly improving query performance.",
+                "It is crucial for large databases where quick access to data is essential, optimizing the overall efficiency of database operations."
+            ]
+        },
+        {
+            "question": "Describe a situation where you had to adapt to unexpected changes in a project, and how did you manage to maintain project goals and quality?",
+            "tags": ["All", "Common"],
+            "answer": [
+                "In a project, unexpected changes in client requirements required a shift in the project scope.",
+                "To adapt, I conducted a thorough impact analysis, adjusted the project plan, and communicated changes transparently to stakeholders.",
+                "Despite the challenges, we maintained project goals by reprioritizing tasks, ensuring high-quality deliverables within the revised timeline."
+            ]
+        },
+        {
+            "question": "What role does prototyping play in the design process, and can you share an example of how prototyping helped in refining a product's user experience?",
+            "tags": ["UI/UX"],
+            "answer": [
+                "Prototyping allows designers to create a tangible representation of a product, facilitating user testing and feedback.",
+                "In a website redesign, prototyping helped identify navigation issues before development, leading to a more intuitive user interface.",
+                "User testing of the prototype guided further refinements, resulting in a final product that met user expectations and significantly improved user experience."
             ]
         }
     ]

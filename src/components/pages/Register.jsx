@@ -17,19 +17,28 @@ const Register = () => {
         "phoneNumber":"",
         "password":""
     })
-    const handleFormSubmit = async (e)=>{
-        e.preventDefault()
-        const loginResponse = await axios.post('https://prep-me-up.onrender.com/register', registerDetails,{
+    const registerUser = async ()=>{
+        return await axios.post('http://localhost:4000/register', registerDetails,{
             headers:{
                 "Content-Type": "application/json"
             }
         })
-        console.log(loginResponse);
-        if(loginResponse.statusText.toLowerCase() === 'ok'){
-            toast.success("User successfully regisitered")
-            return
-        }
-        return toast.error("Fail to register user")
+    }
+    const handleFormSubmit = async (e)=>{
+        e.preventDefault()
+        toast.promise(registerUser(),
+          {
+            loading: 'Registering user...',
+            success: (registerResponse) => {
+                if (registerResponse.status === 200) {
+                    return `User Registered Success`
+                }
+            },
+            error: (registerResponse)=>{
+                return registerResponse.response.data.message
+            }
+          }
+        );
     }
     const handleInputChange = (e)=>{
         const {name, value} = e.target

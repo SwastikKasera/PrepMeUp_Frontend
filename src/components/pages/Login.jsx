@@ -17,21 +17,31 @@ const Login = () => {
         "phoneNumber":"",
         "password":""
     })
-    const handleFormSubmit = async (e)=>{
-        e.preventDefault()
-        const loginResponse = await axios.post('https://prep-me-up.onrender.com/login', loginDetails,{
-            headers:{
-                "Content-Type": "application/json"
+    const loginUser = async () => {
+        return axios.post('https://prep-me-up.onrender.com/login', loginDetails, {
+            headers: {
+              'Content-Type': 'application/json',
+            },
+          })
+      };
+    const handleFormSubmit = async (e) => {
+        e.preventDefault();
+        toast.promise(loginUser(),
+          {
+            loading: 'Logging in...',
+            success: (loginResponse) => {
+                if (loginResponse.status === 200) {
+                    Cookies.set('token', loginResponse.data.token);
+                    navigate('/common-question');
+                    return 'User Login Success';
+                }
+            },
+            error: (loginResponse)=>{
+                return loginResponse.response.data.message
             }
-        })
-        console.log(loginResponse);
-        if(loginResponse.status === 200){
-            Cookies.set("token",loginResponse.data.token)
-            toast.success("User Login Success")
-            navigate('/dashboard')
-        }
-        return toast.error("Login Fail")
-    }
+          }
+        );
+      };
     const handleInputChange = (e)=>{
         const {name, value} = e.target
         
